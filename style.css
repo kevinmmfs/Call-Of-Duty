@@ -1,0 +1,71 @@
+	* {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		text-decoration: none;
+	}
+
+	html {
+		font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+		font-weight: bold;
+		font-size: .938rem;
+	}
+
+	.menu-nav{
+		transition: 1.5s;
+
+		display: flex;
+		text-align: center; 
+		font-family: Monospace;
+		color: #1C1C1C;
+		margin: 7.5rem 3.75rem 0 0;
+		cursor: pointer;
+	}
+
+	.menu-nav:hover {
+		transition: 1.5s;
+		color: white;
+	}
+
+
+
+	.detalhe{
+		width: 100%;
+		height: 8.75rem;
+		
+	}
+
+	.detalhe img {
+		width: 100%;
+		height: 8.75rem;
+		opacity: 0.5;
+		position: absolute;
+		z-index: -1;
+	}
+
+
+	.container01{
+		width: 100%;
+		height: 8.75rem;
+		display: grid;
+		grid-template-columns: auto auto auto auto auto auto auto auto;
+		grid-column-gap: 2.188rem;
+		grid-row-gap: 2.188rem;
+		justify-content: flex-start;
+	}
+	.container01 h3{
+		opacity: 1 !important;
+	}
+	.caixa_title{
+		width: 12.5rem;
+		height: 6.25rem;
+	}
+
+	.titulo{
+		background-image: url(https://bookmakers.net/wp-content/uploads/2020/05/Warzone-logo-280x150-1.png);
+		background-size: 100% 100%;
+		width: 100%;
+		height: 6.25rem;
+
+	}
+	

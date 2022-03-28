@@ -1,1 +1,3 @@
-const começo = ()
+function brilhar () {
+  
+}

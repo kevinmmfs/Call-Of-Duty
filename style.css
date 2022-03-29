@@ -3,6 +3,7 @@
 		padding: 0;
 		border: 0;
 		text-decoration: none;
+		word-break: inherit;
 	}
 
 	html {
@@ -11,61 +12,83 @@
 		font-size: .938rem;
 	} 
 
-	.menu-nav{
-		transition: 1.5s;
+	/*======== HEADER =======*/
+	/*======== TITLE-IMAGE =======*/
 
+	.title {
+		background-image: url(https://bookmakers.net/wp-content/uploads/2020/05/Warzone-logo-280x150-1.png);
+		background-size: 100% 100%;
+		width: 100%;
+		height: 6.25rem;
+		margin-left: 2rem;
+	}
+	
+		/*======== OPTIONS-HEADER =======*/
+
+		.options {
+			display: grid;
+			grid-template-columns: auto auto auto auto auto auto auto;
+			gap: 10px;
+		}
+	
+		.box-title {
+			width: 12.5rem;
+		}
+
+	/*======== MENU-NAV =======*/
+
+	.menu-nav {
+		transition: 1.2s;
 		display: flex;
-		text-align: center; 
+		
 		font-family: Monospace;
 		color: #1C1C1C;
-		margin: 7.5rem 3.75rem 0 0;
+		
+		padding-top: 0.5rem;
+		
 		cursor: pointer;
 	}
 
+	.play {
+		padding-left: 8rem;
+	}
+
+	.end-nav {
+		margin-right: 29rem;
+	}
+
 	.menu-nav:hover {
-		transition: 1.5s;
-		color: white;
+		transition: 1.2s;
+		color: rgb(253, 230, 16);
 	}
 
+	/*======== BACKGROUND-DETAIL-PAI =======*/
 
-
-	.detalhe{
+	.detail {
 		width: 100%;
 		height: 8.75rem;
-		
 	}
 
-	.detalhe img {
+	.detail img {
 		width: 100%;
-		height: 8.75rem;
+		height: 8.60rem;
 		opacity: 0.5;
 		position: absolute;
 		z-index: -1;
 	}
 
+	/*=============== MAIN ==============*/
+	/*======== LEFT-MAIN-CONTAINER =======*/
 
-	.container01{
-		width: 100%;
-		height: 8.75rem;
-		display: grid;
-		grid-template-columns: auto auto auto auto auto auto auto auto;
-		grid-column-gap: 2.188rem;
-		grid-row-gap: 2.188rem;
-		justify-content: flex-start;
-	}
-	.container01 h3{
-		opacity: 1 !important;
-	}
-	.caixa_title{
-		width: 12.5rem;
-		height: 6.25rem;
+	.containers {
+		height: 9rem;
+		width: 29.25rem;
+		background: rgba(0, 0, 0, 0.267);
+		margin-left: 2rem;
+		margin-bottom: 1rem;
 	}
 
-	.titulo{
-		background-image: url(https://bookmakers.net/wp-content/uploads/2020/05/Warzone-logo-280x150-1.png);
-		background-size: 100% 100%;
-		width: 100%;
-		height: 6.25rem;
-
+	.containers h3 {
+		padding-top: .300rem;
+		padding-left: 1rem;
 	}
-	

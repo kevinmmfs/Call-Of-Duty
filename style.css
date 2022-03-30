@@ -3,24 +3,25 @@
 		padding: 0;
 		border: 0;
 		text-decoration: none;
-		word-break: inherit;
+		-webkit-font-smoothing: antialiased; 
 	}
 
 	html {
 		font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-		font-weight: bold;
 		font-size: .938rem;
+		
 	} 
 
 	/*======== HEADER =======*/
 	/*======== TITLE-IMAGE =======*/
 
 	.title {
-		background-image: url(https://bookmakers.net/wp-content/uploads/2020/05/Warzone-logo-280x150-1.png);
+		background-image: url(imgs/Warzone-logo.png);
 		background-size: 100% 100%;
 		width: 100%;
 		height: 6.25rem;
 		margin-left: 2rem;
+
 	}
 	
 		/*======== OPTIONS-HEADER =======*/
@@ -28,7 +29,7 @@
 		.options {
 			display: grid;
 			grid-template-columns: auto auto auto auto auto auto auto;
-			gap: 10px;
+			gap: 2.375rem;
 		}
 	
 		.box-title {
@@ -42,7 +43,9 @@
 		display: flex;
 		
 		font-family: Monospace;
-		color: #1C1C1C;
+		font-weight: bold;
+		font-size: .90rem;
+		color: rgb(139, 139, 148);
 		
 		padding-top: 0.5rem;
 		
@@ -51,6 +54,10 @@
 
 	.play {
 		padding-left: 8rem;
+	}
+
+	.destaque {
+		color: rgb(236, 229, 160);;
 	}
 
 	.end-nav {
@@ -66,7 +73,8 @@
 
 	.detail {
 		width: 100%;
-		height: 8.75rem;
+		height: 8.6rem;
+		background: rgba(0, 0, 0, 0.438);
 	}
 
 	.detail img {
@@ -78,17 +86,114 @@
 	}
 
 	/*=============== MAIN ==============*/
+	.menu-grid-right {
+		float: right;
+		
+	}
+
+	.menu-grid-left {
+		float: left;
+		
+	}
 	/*======== LEFT-MAIN-CONTAINER =======*/
 
 	.containers {
-		height: 9rem;
-		width: 29.25rem;
-		background: rgba(0, 0, 0, 0.267);
+		height: 8rem;
+		width: 23.25rem;
+		background: rgba(0, 0, 0, 0.247);
+
 		margin-left: 2rem;
 		margin-bottom: 1rem;
+		margin-top: 1.3rem;
+		
+		color: rgb(139, 139, 148);
 	}
 
 	.containers h3 {
 		padding-top: .300rem;
 		padding-left: 1rem;
 	}
+
+
+	.blue {
+		color: rgba(100,149,237);
+	}
+
+	.smaller-container {
+		display: flex;
+		align-items: center;
+
+		margin-left: 2rem;
+		margin-bottom: 1rem;
+
+		/*background: rgba(9, 27, 83, 0.425);==== HOVER ====*/
+		background: rgba(0, 0, 0, 0.267);
+		color: rgb(139, 139, 148);
+		width: 29.25rem;
+		height: 2.188rem;
+	}
+
+	.smaller-container h3 {
+		padding-left: 1rem;
+	}
+
+	/*======== RIGHT-MAIN-CONTAINER =======*/
+
+.containers-right {
+	height: 6rem;
+	width: 23.25rem;
+	background: rgba(0, 0, 0, 0.438);
+
+	margin-right: 2rem;
+	margin-bottom: 1rem;
+
+	border-radius: 0 0 1.30rem 0;
+
+	color: rgb(95, 91, 91);
+}
+	
+.container-one-top {
+	height: 2rem;
+	width: 23.25rem;
+	background: rgba(0, 0, 0, 0.438);
+
+	margin-top: 1.3rem;
+	margin-right: 2rem;
+	margin-bottom: .1rem;
+	border-radius: 1.30rem 0 0 0;
+	
+	color: rgb(95, 91, 91);
+
+	display: flex;
+	align-items: center;
+	
+}
+
+.container-one-top h3 {
+	margin-left: 0.938rem;
+}
+
+.main-p1 {
+	padding-top: 3rem;
+	margin-left: 0.938rem;
+}
+
+.main-p2 {
+	margin-left: 0.938rem;
+}
+
+.container-two-top h3{
+	margin-left: 0.938rem;
+	padding-top: 1.3rem;
+}
+
+.container-two {
+	height: 21rem;
+	width: 23.25rem;
+
+	margin-top: 1.3rem;
+	border-radius: 1.30rem 0 1.30rem 0;
+
+	color: rgb(95, 91, 91);
+	background: rgba(0, 0, 0, 0.438);
+}

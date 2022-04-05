@@ -1,14 +1,18 @@
+#fundo {
+	position: absolute;
+	z-index: -1;
+}
+
 * {
 	margin: 0;
 	padding: 0;
 	border: 0;
 	text-decoration: none;
 	-webkit-font-smoothing: antialiased;
+
 }
 
 html {
-	background-image: url(https://thumbs.dreamstime.com/b/aproxima%C3%A7%C3%A3o-do-soldado-dos-e-u-e-do-helic%C3%B3ptero-de-combate-83794115.jpg);
-
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 	font-size: .938rem;
 
@@ -26,7 +30,6 @@ html {
 	--barra: rgba(0, 0, 0, 0.158);
 
 }
-
 
 
 /*======== HEADER =======*/

@@ -1,4 +1,6 @@
 /*==== Carousel ====*/ 
+
+/*
 const swiper = new Swiper('.swiper', {
   // Optional parameters
   direction: 'vertical',
@@ -20,3 +22,5 @@ const swiper = new Swiper('.swiper', {
     el: '.swiper-scrollbar',
   },
 });
+
+*/

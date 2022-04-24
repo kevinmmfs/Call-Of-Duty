@@ -1,19 +1,44 @@
 <!DOCTYPE html>
 <div id="fundo">
-	<img src="https://thumbs.dreamstime.com/b/aproxima%C3%A7%C3%A3o-do-soldado-dos-e-u-e-do-helic%C3%B3ptero-de-combate-83794115.jpg">
+	<img src="">
 </div>	
 	<html lang="pt-br">
 			<!--Css-->
 		<link rel="stylesheet" href="style.css">
 		<link rel="stylesheet" href="https://kevinmmfs.github.io/Call-of-Duty/style.css">
+
+			<!--Swiper-->
+			<script type="module" src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+			
+			<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
 	
 		<!--Script-->
-		<script src="scripts.js"></script> 
+		<script>
+
+			let url = "https://unpkg.com/swiper@8/swiper-bundle.min.js";
+			import(url).then(()=>{
+
+				const swiper = new Swiper('.swiper', {
+
+				direction: 'horizontal',
+				loop: true,
+
+				pagination: {
+					el: '.swiper-pagination',
+				},
+
+				navigation: {
+					nextEl: '.swiper-button-next',
+					prevEl: '.swiper-button-prev',
+				},
+
+				});
+			})
+
+		
+		</script> 
 	
-		<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 	
-		<!--Swiper-->
-		<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
 		
 		<head>
 			<title>Call of Duty</title>
@@ -21,7 +46,7 @@
 	
 			<header>
 				<div class="detail">
-					<img src="https://i1.wp.com/www.multarte.com.br/wp-content/uploads/2018/12/fundo-preto-background74-1024x640.jpg?resize=696%2C435&ssl=1">
+					<img id="detalhe" src="https://i1.wp.com/www.multarte.com.br/wp-content/uploads/2018/12/fundo-preto-background74-1024x640.jpg?resize=696%2C435&ssl=1">
 					<div class="box-title">
 						<div class="title"></div>
 					</div>
@@ -35,8 +60,36 @@
 						<a href="#" class="menu-nav">BARRACKS</a>
 						<a href="#"class="menu-nav end-nav">STORE</a>
 					</div>
-				
+
+						<div class="right-box">
+							<div class="aling">
+								<img class="CP" src="/imgs/icon-cp" alt="CP">
+									<div class="spacing_number">
+										<p>1700</p>
+									</div>
+							</div>
+							<div class="aling">
+								<img id="rank" src="https://www.callofduty.com/cdn/app/icons/mw/ranks/mp/icon_rank_41.png" alt="">
+								<div class="RANK55"><h2 class="blue-main">Rank 55</h2></div>
+							</div>
+							
+							<div id="aling_P1">
+								<img id="total_pessoas" src="/imgs/total_pessoas.png" alt="">
+								<div class="spacing_number">
+									<p>1/20</p>
+								</div>
+							</div>
+							<div id="aling_P2">
+								<img id="pessoas" src="/imgs/pessoa.png" alt="">
+								<div class="spacing_number">
+									<p>1/20</p>
+								</div>
+							</div>
+
+						</div>
+						
 				</div>	
+
 				
 			</header>
 		<body>
@@ -52,7 +105,6 @@
 			
 						<div class="smaller-container"><h3>PLAYLIST SELECT</h3></div>
 			
-						<!-- <div class="smaller-container blue"><h3>PRATICE MODES AND TRIALS</h3></div> -->
 	
 					</div>
 						<!-- LADO-DIREITO -->
@@ -60,10 +112,11 @@
 						<div class="container-one-top"><h3>Mission - <span class="blue-main">Boot Camp!</span></h3></div>
 	
 						<div class="containers-right">
+
 							<div  class="main-p1 flex-icon">
 								<p>[8/10] - Pilot a vehicle for <span class="blue-main">5</span> minutes</p>
-								<img class="icons-right icon-space" src="https://imagensemoldes.com.br/wp-content/uploads/2020/04/Patentes-Free-Fire-PNG-Ouro.png" alt="">
-								<img class="icons-right" src="https://cdn.iconscout.com/icon/free/png-256/xp-1070696.png" alt="">
+								<img id="icon_1" class="icons-right " src="https://imagensemoldes.com.br/wp-content/uploads/2020/04/Patentes-Free-Fire-PNG-Ouro.png" alt="">
+								<img class="icon_pai" src="/imgs/XP-icon.png" alt="XP">
 							</div>
 	
 								<div class="barra"><p class="main-p2">3/5</p></div>
@@ -74,47 +127,42 @@
 	
 							<div class="main-p1 flex-icon">
 								<p>Complete <span class="blue-main"> 5</span>'Recon'Contratc[s]</p>
-								<img class="icons-right icon-space" src="https://imagensemoldes.com.br/wp-content/uploads/2020/04/Patentes-Free-Fire-PNG-Ouro.png" alt="">
-								<img class="icons-right" src="https://cdn.iconscout.com/icon/free/png-256/xp-1070696.png" alt="">
+								<img id="icon_2" class="icons-right" src="/imgs/icon-prata.png" alt="">
+								<img class="icon_pai" src="/imgs/XP-icon.png" alt="XP">
 							</div>
 							<div class="barra-2">
 								<p class="main-p2">0/5</p>
 							</div>
 							<div  class="main-p1 flex-icon">
 								<p>Start <span class="blue-main">3</span> Contratc[s] at the verdansk<br>Airport</p>
-								<img class="icons-right icon-space" src="https://imagensemoldes.com.br/wp-content/uploads/2020/04/Patentes-Free-Fire-PNG-Ouro.png" alt="">
-								<img class="icons-right" src="https://cdn.iconscout.com/icon/free/png-256/xp-1070696.png" alt="">
+								<img id="icon_3" class="icons-right icon-space" src="https://imagensemoldes.com.br/wp-content/uploads/2020/04/Patentes-Free-Fire-PNG-Ouro.png" alt="">
+								<img class="icon_pai" src="/imgs/XP-icon.png" alt="XP">
 							</div>
 							<div class="barra-2">
 								<p class="main-p2">0/5</p>
 							</div>
 							<div  class="main-p1 flex-icon">
 								<p>Open <span class="blue-main">10</span> Caches</p>
-								<img class="icons-right icon-space" src="https://imagensemoldes.com.br/wp-content/uploads/2020/04/Patentes-Free-Fire-PNG-Ouro.png" alt="">
-								<img class="icons-right" src="https://cdn.iconscout.com/icon/free/png-256/xp-1070696.png" alt="">
+								<img id="icon_4" class="icons-right icon-space" src="https://imagensemoldes.com.br/wp-content/uploads/2020/04/Patentes-Free-Fire-PNG-Ouro.png" alt="">
+								<img class="icon_pai" src="/imgs/XP-icon.png" alt="XP">
 							</div>
 							<div class="barra-2">
-								<p class="main-p2">0/10</p>
+								<p class="main-p2 main-bottom">0/10</p>
 							</div>
 						</div>
 	
-						<!--Carrousel-->
-						<div class="swiper-container">
+						<!--SWIPER-->
+						<div class="swiper">
 							
-							<div id="img-bottom">
-								<div class="container-right-bottom">
-									<div class="texts">
-										<div class="text-bottom">
-											<h2>Battle Pass</h2>
-											<div class="carrousel">
-												- - -
-											</div>
-											<p>Unlock Prince and 100+ rewards.</p>
-										</div>
-									</div>
-								</div>
+							<div class="swiper-wrapper">
+								<div class="img-bottom swiper-slide"><img src="/imgs/img-bottom.jpg" alt=""></div>
+								<div class="img-bottom swiper-slide"><img src="/imgs/img-bottom-2" alt=""></div>
+								<div class="img-bottom swiper-slide"><img src="/imgs/img-bottom-3" alt=""></div>
 							</div>
-							
+								<div class="text"><p>Unlock Prince and 100+ rewards.</p></div>
+							<div class="swiper-pagination"></div>
+							<div class="swiper-button-prev"></div>
+							<div class="swiper-button-next"></div>
 						</div>
 	
 					</div>
@@ -122,4 +170,3 @@
 	
 		</body>
 	</html>
-

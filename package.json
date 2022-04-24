@@ -1,0 +1,23 @@
+{
+  "name": "call-of-duty",
+  "version": "1.0.0",
+  "description": "",
+  "main": "scripts.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevinmmfs/Call-of-Duty.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kevinmmfs/Call-of-Duty/issues"
+  },
+  "homepage": "https://github.com/kevinmmfs/Call-of-Duty#readme",
+  "dependencies": {
+    "lite-server": "^2.6.1"
+  }
+}

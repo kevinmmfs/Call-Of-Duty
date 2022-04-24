@@ -238,8 +238,7 @@ function init() {
         model.rotation.y += rotation_y;
         //model.rotation.x += Math.PI/2;
         scene.add(model);
-  
-        console.log(gltf.animations); //shows all animations imported into the dopesheet in blender
+
   
         if (gltf.animations.length>0){
           let mixer = new THREE.AnimationMixer(gltf.scene);

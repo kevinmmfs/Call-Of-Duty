@@ -1,26 +1,25 @@
-/*==== Carousel ====*/ 
 
-/*
-const swiper = new Swiper('.swiper', {
-  // Optional parameters
-  direction: 'vertical',
-  loop: true,
+$( document ).ready(function(){
 
-  // If we need pagination
-  pagination: {
+  const swiper = new Swiper('.swiper', {
+
+    direction: 'horizontal',
+    loop: true,
+
+    pagination: {
     el: '.swiper-pagination',
-  },
+    clickable: true,
+    type: 'bullets',
+    renderBullet: function (index, className) {
+      return `<div class="box ${className}"></div>`;
+    },
+    },
 
-  // Navigation arrows
-  navigation: {
+    navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
-  },
+    },
 
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
 });
 
-*/
+})

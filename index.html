@@ -1,47 +1,19 @@
 <!DOCTYPE html>
-<link rel="stylesheet" href="style.css">
-<script type="module" src="./three-script.js"></script> 
 
+<link rel="stylesheet" href="style.css">
+<script type="module" src="three-script.js"></script> 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script type="module" src="scripts.js"></script> 
+<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
 <div id="fundo">
 	<section id="loading-screen">
         <div id="logo"></div>
         <div id="loader"></div>
-       
     </section>
 </div>	
 	<html lang="pt-br">
-			<!--Css-->
-	
-	
-		<!--Script-->
-		<script>
-
-			let url = "https://unpkg.com/swiper@8/swiper-bundle.min.js";
-			import(url).then(()=>{
-
-				const swiper = new Swiper('.swiper', {
-
-				direction: 'horizontal',
-				loop: true,
-
-				pagination: {
-					el: '.swiper-pagination',
-				},
-
-				navigation: {
-					nextEl: '.swiper-button-next',
-					prevEl: '.swiper-button-prev',
-				},
-
-				});
-			})
-
-		
-		</script> 
-	
-	
-		
 		<head>
 			<title>Call of Duty</title>
 		</head>
@@ -53,7 +25,6 @@
 						<div class="title"></div>
 					</div>
 					<div class="options">
-	
 						<a href="#" class="menu-nav play">PLAY</a>
 						<a href="#" class="menu-nav destaque">BATTLE PASS</a>
 						<a href="#" class="menu-nav">WEAPONS</a>
@@ -104,13 +75,13 @@
 						<div class="containers"><h3>BR DUOS</h3></div>
 						<div class="containers blue"><h3>MODERN WARFARE GUNFIGHT</h3></div>
 						<div class="containers blue"><h3>MODERN WARFARE MULTIPLAYER</h3></div>
-			
 						<div class="smaller-container"><h3>PLAYLIST SELECT</h3></div>
 			
 	
 					</div>
 						<!-- LADO-DIREITO -->
 					<div class="menu-grid-right">	
+					
 						<div class="container-one-top"><h3>Mission - <span class="blue-main">Boot Camp!</span></h3></div>
 	
 						<div class="containers-right">
@@ -152,7 +123,7 @@
 								<p class="main-p2 main-bottom">0/10</p>
 							</div>
 						</div>
-	
+
 						<!--SWIPER-->
 						<div class="swiper">
 							
@@ -161,14 +132,13 @@
 								<div class="img-bottom swiper-slide"><img src="/imgs/img-bottom-2" alt=""></div>
 								<div class="img-bottom swiper-slide"><img src="/imgs/img-bottom-3" alt=""></div>
 							</div>
-								<div class="text"><p>Unlock Prince and 100+ rewards.</p></div>
+							<div class="text"><p>Unlock Prince and 100+ rewards.</p></div>
 							<div class="swiper-pagination"></div>
-							<div class="swiper-button-prev"></div>
-							<div class="swiper-button-next"></div>
 						</div>
 	
 					</div>
 			</main>
 	
 		</body>
+	
 	</html>
